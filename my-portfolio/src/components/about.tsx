@@ -2,7 +2,7 @@ import Button from "./commonComponents/buttonComponent";
 
 export default function AboutPage() {
     return (
-       <section id="about" className="HomePage min-h-[calc(100vh-10rem)] py-15 mx-auto max-w-6xl">
+       <section id="about" className="AboutPage min-h-[calc(100vh-10rem)] py-15 mx-auto max-w-6xl">
             <div className="Title flex flex-col items-center gap-4">
                 <h1 className="font-semibold">About Me</h1>
                 <div className="w-20 h-1 bg-(--primary) rounded-full mx-auto"></div>

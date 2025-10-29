@@ -1,5 +1,5 @@
 "use client";
-import { Languages, Menu, Moon, Sun, X } from "lucide-react";
+import { Menu, Moon, Sun, X } from "lucide-react";
 import Button from "./commonComponents/buttonComponent";
 import { useState } from "react";
 
@@ -8,8 +8,7 @@ export default function Header() {
   const [isToggleTheme, setIsToggleTheme] = useState(false);
   const [isToggleLanguage, setIsToggleLanguage] = useState(false);
 
-  const list = ["Home", "About", "Projects", "Contact"];
-
+  const list = ["Home", "About", "Skills", "Work Experience", "Projects", "Contact"];
 
   return (
     <header className="bg-white/80 backdrop-blur-md shadow-md py-4 px-[100px] flex max-md:px-4 max-md:grid max-md:grid-cols-2 items-center justify-between fixed z-1 w-full">
@@ -17,7 +16,7 @@ export default function Header() {
         <h1 className="text-1xl text-(--primary) max-md:pl-2">Portfolio</h1>
       </div>
       {/* Desktop menu */}
-      <ul className="Menu flex items-center space-x-4 gap-6 max-md:gap-0 max-md:justify-end">
+      <ul className="Menu flex items-center space-x-4 max-md:justify-end">
         {list.map((item, index) => (
           <li key={index} className="inline-block cursor-pointer hover:text-(--primary) max-md:hidden">{item}</li>
         ))}
